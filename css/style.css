@@ -5,6 +5,9 @@ margin:0px;
 padding:0px;
 font-family:arial,verdana;
 }
+input[type="text"]:focus{
+	outline: none;
+}
 #maincontainer {
 
 }
@@ -98,9 +101,18 @@ float:right;
 }
 #maincontainer .maincontainer_right .top-header{
 width:100%;	
-padding-top:2px;
+padding-top:0px;
 float: left;
+-webkit-box-shadow:  0 8px 72px -6px #D0D0D0;
+-moz-box-shadow:  0 8px 72px -6px #D0D0D0;
+box-shadow:  0 8px 72px -6px #D0D0D0;
 }
+
+
+
+
+
+
 #maincontainer .maincontainer_right .top-header ul{
 float:right;
 margin:0px 20px 0px 0px;
@@ -147,4 +159,43 @@ background-position:386px 166px;
 #maincontainer .maincontainer_right .top-header ul li.status{
 background-position:345px 166px;
 }
-
+#maincontainer .maincontainer_right .message-box-container{
+width:100%;
+float:left;
+}
+#maincontainer .maincontainer_right .message-box-container .message-box-container-top{
+width:100%;
+margin:0px;
+padding: 30px 0px 0px 0px;
+}
+#maincontainer .maincontainer_right .message-box-container .message-box-container-top .title-text{
+float:left;	
+width:75%;
+font-family: Verdana, Geneva, sans-serif;
+color: #E0E0E0;
+font-size:1.2em;
+padding: 0 0 0 20px;
+}
+#maincontainer .maincontainer_right .message-box-container .message-box-container-top .search-textbox{
+float:right;	
+width:20%;
+background:#F0F0F0;
+border:1px solid #F0F0F0;
+border-radius: 17px;
+padding: 0 0 4px 0;
+margin-right: 26px;
+}
+#maincontainer .maincontainer_right .message-box-container .message-box-container-top .search-textbox span{
+background: url("../asset/sprite.png") -206px -64px;
+position:relative;
+display:inline-block;
+width:30px;
+height:28px;
+vertical-align: bottom;
+}
+#maincontainer .maincontainer_right .message-box-container .message-box-container-top .search-textbox input[type="text"]{
+display:inline-block;
+border: none;
+background:#F0F0F0;
+height: 20px;
+}
