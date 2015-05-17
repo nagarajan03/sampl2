@@ -246,6 +246,10 @@ width: 98.2%;
 padding: 17px 0 17px 16px;
 display:table-row;
 }
+#maincontainer .maincontainer_right .message-box-container .message-list:hover,#maincontainer .maincontainer_right .message-box-container .message-list.selected{
+background:#F5FAFE;
+border-left: 1px solid #63A8EB;
+}
 #maincontainer .maincontainer_right .message-box-container .message-list .checkbox-cell{
 display:table-cell;
 vertical-align: middle;
