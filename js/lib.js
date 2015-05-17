@@ -11,7 +11,7 @@ $.each($var, function(index,val){
 	$('<div class="checkbox" data-index="'+index+'"> </div>').insertAfter(val);
 });
 
-$mailContainer.css({'height':(windowHeight-height)+'px','overflow-y':'scroll','overflow-x':'hidden'});
+$mailContainer.css({'height':(windowHeight-56)+'px','overflow-y':'scroll','overflow-x':'hidden'});
 
 $('.checkbox').click(function(){
 	var indexVal = $(this).data('index');

@@ -182,6 +182,16 @@ width: 30.5%;
 .scorll ul.mail-option-header{
 display:block
 }
+.scorll ul.mail-option-header li.checkbox-container{
+width: 95px;
+background:none;
+}
+.scorll ul.mail-option-header li.checkbox-container span{
+margin-top: 6px;
+display: inline-block;
+vertical-align: top;
+color: #808080
+}
 #maincontainer .maincontainer_right .message-box-container .message-box-container-top{
 width: 99.8%;
 margin:0px;
@@ -329,9 +339,10 @@ input[type='checkbox']{
 display:none;	
 }
 .checkbox{
-background: url("../asset/sprite.png") -25px -109px;
+background: url("../asset/sprite.png") -25px -109px no-repeat;
 width:30px;
 height:28px;
+display: inline-block;
 }
 .checkbox.checked{
 background-position: -69px -109px;	
