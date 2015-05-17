@@ -4,6 +4,7 @@ body{
 margin:0px;
 padding:0px;
 font-family:arial,verdana;
+overflow: hidden;
 }
 input[type="text"]:focus{
 	outline: none;
@@ -99,7 +100,10 @@ font-weight:bold;
 width:80%;
 float:right;
 }
-#maincontainer .maincontainer_right .top-header{
+.mail-option-header{
+	display:none;
+}
+#maincontainer .maincontainer_right .top-content{
 width:100%;	
 padding-top:0px;
 float: left;
@@ -107,19 +111,25 @@ float: left;
 -moz-box-shadow:  0 8px 72px -6px #D0D0D0;
 box-shadow:  0 8px 72px -6px #D0D0D0;
 }
+.scorll #maincontainer .maincontainer_right .top-content{
+position: fixed;
+background:#FFFFFF;
+z-index: 1000;	
+}
 
 
+#maincontainer .maincontainer_right .top-header.top-fixed ul{
+width: 30.5%;
+}
 
 
-
-
-#maincontainer .maincontainer_right .top-header ul{
+#maincontainer .maincontainer_right ul.top-header{
 float:right;
 margin:0px 20px 0px 0px;
 padding:11px 0px 11px 0px;
 list-style: none;
 }
-#maincontainer .maincontainer_right .top-header ul li{
+#maincontainer .maincontainer_right ul.top-header li{
 background:url("../asset/sprite.png") 0 0;
 position:relative;
 display:inline-block;
@@ -128,13 +138,13 @@ height:28px;
 cursor:pointer;
 list-style: none;
 }
-#maincontainer .maincontainer_right .top-header ul li.profile_icon{
+#maincontainer .maincontainer_right ul.top-header li.profile_icon{
 background:url("../asset/face_icon.png") 0 0 no-repeat;
 background-size:100% 100%;
 margin-right:10px;
 position:relative;
 }
-#maincontainer .maincontainer_right .top-header ul li.profile_icon span{
+#maincontainer .maincontainer_right ul.top-header li.profile_icon span{
 position:absolute;
 background:url("../asset/status.png") 0 0;
 width:16px;
@@ -142,26 +152,35 @@ height:16px;
 right:0px;
 bottom:0px;
 }
-#maincontainer .maincontainer_right .top-header ul li.profile_icon span.available_stat{
+#maincontainer .maincontainer_right ul.top-header li.profile_icon span.available_stat{
 background-position: 0 -51px;
 
 }
-#maincontainer .maincontainer_right .top-header ul li.profile_icon span.away_stat{
+#maincontainer .maincontainer_right ul.top-header li.profile_icon span.away_stat{
 background-position: -16px -33px;
 
 }
-#maincontainer .maincontainer_right .top-header ul li.message-box{
+#maincontainer .maincontainer_right ul.top-header li.message-box{
 background-position:430px 166px;
 }
-#maincontainer .maincontainer_right .top-header ul li.alert{
+#maincontainer .maincontainer_right ul.top-header li.alert{
 background-position:386px 166px;
 }
-#maincontainer .maincontainer_right .top-header ul li.status{
+#maincontainer .maincontainer_right ul.top-header li.status{
 background-position:345px 166px;
 }
 #maincontainer .maincontainer_right .message-box-container{
 width:100%;
 float:left;
+}
+.scorll #maincontainer .maincontainer_right .message-box-container{
+margin-top:55px;	
+}
+.scorll #maincontainer .maincontainer_right ul.top-header{
+width: 30.5%;	
+}
+.scorll ul.mail-option-header{
+display:block
 }
 #maincontainer .maincontainer_right .message-box-container .message-box-container-top{
 width: 99.8%;
@@ -208,13 +227,13 @@ float:left;
 width:100%;
 margin-bottom:10px;
 }
-#maincontainer .maincontainer_right .message-box-container .mail-box-option ul.mail-option{
+#maincontainer .maincontainer_right .message-box-container .mail-box-option ul.mail-option, .scorll ul.mail-option-header{
 float:left;
 list-style: none;	
 margin: 10px 0 0 17px;
 padding: 0;
 }
-#maincontainer .maincontainer_right .message-box-container .mail-box-option ul.mail-option li{
+#maincontainer .maincontainer_right .message-box-container .mail-box-option ul.mail-option li,.scorll ul.mail-option-header li{
 display:inline-block;
 background:url("../asset/sprite.png") 0 0;
 width:30px;
@@ -222,20 +241,20 @@ height:28px;
 margin-right:5px;
 cursor: pointer;
 }
-#maincontainer .maincontainer_right .message-box-container .mail-box-option ul.mail-option li.newfolder{
+#maincontainer .maincontainer_right .message-box-container .mail-box-option ul.mail-option li.newfolder,.scorll ul.mail-option-header li.newfolder{
 background-position: -185px -20px;	
 }
-#maincontainer .maincontainer_right .message-box-container .mail-box-option ul.mail-option li.tag{
+#maincontainer .maincontainer_right .message-box-container .mail-box-option ul.mail-option li.tag,.scorll ul.mail-option-header li.tag{
 background-position: -228px -20px;	
 }
-#maincontainer .maincontainer_right .message-box-container .mail-box-option ul.mail-option li.divider{
+#maincontainer .maincontainer_right .message-box-container .mail-box-option ul.mail-option li.divider,.scorll ul.mail-option-header li.divider{
 background-position: -156px -112px;
 width: 10px;	
 }
-#maincontainer .maincontainer_right .message-box-container .mail-box-option ul.mail-option li.delete{
+#maincontainer .maincontainer_right .message-box-container .mail-box-option ul.mail-option li.delete,.scorll ul.mail-option-header li.delete{
 background-position: -268px -20px;	
 }
-#maincontainer .maincontainer_right .message-box-container .mail-box-option ul.mail-option li.info{
+#maincontainer .maincontainer_right .message-box-container .mail-box-option ul.mail-option li.info,.scorll ul.mail-option-header li.info{
 background-position: -306px -20px;	
 }
 #maincontainer .maincontainer_right .message-box-container .message-list{

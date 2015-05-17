@@ -3,11 +3,15 @@
  */
 
 $(document).ready(function(){
-var $var = $('input[type="checkbox"]');
+var $var            = $('input[type="checkbox"]'),
+    height          = $('.top-header').height(),
+    windowHeight    = $(window).height(),
+    $mailContainer  = $('.message-box-container');
 $.each($var, function(index,val){
 	$('<div class="checkbox" data-index="'+index+'"> </div>').insertAfter(val);
 });
 
+$mailContainer.css({'height':(windowHeight-height)+'px','overflow-y':'scroll','overflow-x':'hidden'});
 
 $('.checkbox').click(function(){
 	var indexVal = $(this).data('index');
@@ -18,6 +22,15 @@ $('.checkbox').click(function(){
 	}else{
 		$var.eq(indexVal).prop('checked',true);
 		$var.eq(indexVal).parent().parent().addClass('selected');
+	}
+});
+$mailContainer.scroll(function(){
+	var scrolTop   = $mailContainer.scrollTop(),
+	    $body      = $('body');
+	if(scrolTop >= 100){
+		$body.addClass('scorll');
+	}else{
+		$body.removeClass('scorll');
 	}
 });
 
