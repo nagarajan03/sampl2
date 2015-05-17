@@ -164,9 +164,12 @@ width:100%;
 float:left;
 }
 #maincontainer .maincontainer_right .message-box-container .message-box-container-top{
-width:100%;
+width: 99.8%;
 margin:0px;
 padding: 30px 0px 0px 0px;
+border-left:1px solid #E0E0E0;
+border-bottom:1px solid #E0E0E0;
+float:left;
 }
 #maincontainer .maincontainer_right .message-box-container .message-box-container-top .title-text{
 float:left;	
@@ -174,7 +177,7 @@ width:75%;
 font-family: Verdana, Geneva, sans-serif;
 color: #E0E0E0;
 font-size:1.2em;
-padding: 0 0 0 20px;
+padding: 9px 0 0 20px;
 }
 #maincontainer .maincontainer_right .message-box-container .message-box-container-top .search-textbox{
 float:right;	
@@ -199,4 +202,117 @@ display:inline-block;
 border: none;
 background:#F0F0F0;
 height: 20px;
+}
+#maincontainer .maincontainer_right .message-box-container .mail-box-option{
+float:left;
+width:100%;
+margin-bottom:10px;
+}
+#maincontainer .maincontainer_right .message-box-container .mail-box-option ul.mail-option{
+float:left;
+list-style: none;	
+margin: 10px 0 0 17px;
+padding: 0;
+}
+#maincontainer .maincontainer_right .message-box-container .mail-box-option ul.mail-option li{
+display:inline-block;
+background:url("../asset/sprite.png") 0 0;
+width:30px;
+height:28px;
+margin-right:5px;
+cursor: pointer;
+}
+#maincontainer .maincontainer_right .message-box-container .mail-box-option ul.mail-option li.newfolder{
+background-position: -185px -20px;	
+}
+#maincontainer .maincontainer_right .message-box-container .mail-box-option ul.mail-option li.tag{
+background-position: -228px -20px;	
+}
+#maincontainer .maincontainer_right .message-box-container .mail-box-option ul.mail-option li.divider{
+background-position: -156px -112px;
+width: 10px;	
+}
+#maincontainer .maincontainer_right .message-box-container .mail-box-option ul.mail-option li.delete{
+background-position: -268px -20px;	
+}
+#maincontainer .maincontainer_right .message-box-container .mail-box-option ul.mail-option li.info{
+background-position: -306px -20px;	
+}
+#maincontainer .maincontainer_right .message-box-container .message-list{
+border-left:1px solid #E0E0E0;
+border-bottom:1px solid #E0E0E0;
+float:left;
+width: 98.2%;
+padding: 17px 0 17px 16px;
+display:table-row;
+}
+#maincontainer .maincontainer_right .message-box-container .message-list .checkbox-cell{
+display:table-cell;
+vertical-align: middle;
+padding-right: 15px;
+}
+#maincontainer .maincontainer_right .message-box-container .message-list .start-icon{	
+display:table-cell;
+vertical-align: middle;
+padding-right: 18px;
+}
+#maincontainer .maincontainer_right .message-box-container .message-list .start-icon span{
+width:16px;
+height: 16px;
+display:block;
+background:url("../asset/sprite.png") 0 0;	
+}
+#maincontainer .maincontainer_right .message-box-container .message-list .start-icon span.normal{
+background-position: -246px -71px;
+}
+#maincontainer .maincontainer_right .message-box-container .message-list .start-icon span.important{
+background-position: -277px -71px;
+}
+#maincontainer .maincontainer_right .message-box-container .message-list .mail-profile-img{
+display:table-cell;
+vertical-align: middle;
+padding-right: 14px;
+}
+#maincontainer .maincontainer_right .message-box-container .message-list .message{
+display:table-cell;
+vertical-align: middle;
+padding-right: 20px;
+width: 79%;
+}
+#maincontainer .maincontainer_right .message-box-container .message-list .message .messager-name{
+color: #808080;
+font-size: 0.9em;
+font-weight: bold;
+padding-bottom:8px;
+}
+#maincontainer .maincontainer_right .message-box-container .message-list .message .message-sub{
+color: #808080;
+font-size: 0.7em;
+}
+#maincontainer .maincontainer_right .message-box-container .message-list .date-and-time{
+display:table-cell;
+vertical-align: middle;
+margin-right:10px;
+text-align:right;
+color: #808080;
+font-size: 0.7em;
+}
+#maincontainer .maincontainer_right .message-box-container .message-list .date-and-time .recvied-time{
+padding-bottom: 8px;	
+}
+
+/* Check Box custom degin*/
+input[type='checkbox']{
+display:none;	
+}
+.checkbox{
+background: url("../asset/sprite.png") -25px -109px;
+width:30px;
+height:28px;
+}
+.checkbox.checked{
+background-position: -69px -109px;	
+}
+.checkbox.multiselect{
+background-position: -182px -109px;	
 }
