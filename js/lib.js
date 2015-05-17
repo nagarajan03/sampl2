@@ -14,10 +14,11 @@ $('.checkbox').click(function(){
 	$(this).toggleClass('checked');
 	if($var.eq(indexVal).prop('checked')){
 		$var.eq(indexVal).prop('checked',false );
+		$var.eq(indexVal).parent().parent().removeClass('selected');
 	}else{
 		$var.eq(indexVal).prop('checked',true);
+		$var.eq(indexVal).parent().parent().addClass('selected');
 	}
-	console.log(indexVal);
 });
 
 });
