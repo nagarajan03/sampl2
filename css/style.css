@@ -184,6 +184,7 @@ border:1px solid #F0F0F0;
 border-radius: 17px;
 padding: 0 0 4px 0;
 margin-right: 26px;
+min-width: 209px;
 }
 #maincontainer .maincontainer_right .message-box-container .message-box-container-top .search-textbox span{
 background: url("../asset/sprite.png") -206px -64px;
